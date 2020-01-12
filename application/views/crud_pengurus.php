@@ -82,5 +82,46 @@
 </div>
 <!-- Modal Tambah -->
 
+<!-- Modal tambah -->
+<div class="modal" id="myModalEdit">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Edit Data</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="form-group">
+          <label>ID</label>
+          <input type="text" ng-model="idEdit" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>NAMA</label>
+          <input type="text" ng-model="namaEdit" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>ALAMAT</label>
+          <textarea class="form-control" ng-model="alamatEdit"></textarea>
+        </div>
+        <div class="form-group">
+          <label>GAJI</label>
+          <input type="number" ng-model="gajiEdit" class="form-control">
+        </div>
+      </div>
+ 
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="updateData()">Update</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal Tambah -->
 
 </div>  
